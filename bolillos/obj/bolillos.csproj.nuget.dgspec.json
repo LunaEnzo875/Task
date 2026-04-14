@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lab15-PC01\\Task\\bolillos\\bolillos.csproj": {}
+    "C:\\Users\\Lab15-PC01\\Desktop\\Task\\bolillos\\bolillos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lab15-PC01\\Task\\bolillos\\bolillos.csproj": {
+    "C:\\Users\\Lab15-PC01\\Desktop\\Task\\bolillos\\bolillos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lab15-PC01\\Task\\bolillos\\bolillos.csproj",
+        "projectUniqueName": "C:\\Users\\Lab15-PC01\\Desktop\\Task\\bolillos\\bolillos.csproj",
         "projectName": "bolillos",
-        "projectPath": "C:\\Users\\Lab15-PC01\\Task\\bolillos\\bolillos.csproj",
+        "projectPath": "C:\\Users\\Lab15-PC01\\Desktop\\Task\\bolillos\\bolillos.csproj",
         "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lab15-PC01\\Task\\bolillos\\obj\\",
+        "outputPath": "C:\\Users\\Lab15-PC01\\Desktop\\Task\\bolillos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
