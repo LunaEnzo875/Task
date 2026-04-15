@@ -3,5 +3,5 @@ using SimBolillero;
 namespace ISimBolillero;
 
 public interface IBolillero{
-    Bolillero sacarBolillo();
+    bool SacarBolilla_Y_Verjugada(Bolillero bolillero);
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bolillos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30d6ca4c260c7e95db2a8ca5a17ec41e48a2be52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f9c9187bd13cfe898635f70ee7b432424403e69")]
 [assembly: System.Reflection.AssemblyProductAttribute("bolillos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bolillos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
