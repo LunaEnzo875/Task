@@ -13,13 +13,14 @@ public class Bolillero
         this.cantJugadas = cantJugadas;
         this.bolillas = bolillas;
         this.bolillasSacadas = bolillasSacadas;
-    } 
+    }
 
-    public int sacarBolilla()
+    public void sacarBolilla()
     {
         Random r = new Random();
         int Jugada = r.Next(bolillas.Count);
-        return bolillas[Jugada];
+        List<int> bolillasSacadas = new List<int>(Jugada);
+        bolillasSacadas.Add(bolillas[Jugada]);
     }
 
     
