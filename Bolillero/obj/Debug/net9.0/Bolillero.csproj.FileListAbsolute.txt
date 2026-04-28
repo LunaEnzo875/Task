@@ -1,5 +1,0 @@
-C:\Users\Lab15-PC01\Desktop\Task\bolillos\Bolillero\obj\Debug\net9.0\Bolillero.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lab15-PC01\Desktop\Task\bolillos\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfoInputs.cache
-C:\Users\Lab15-PC01\Desktop\Task\bolillos\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfo.cs
-C:\Users\Lab15-PC01\Desktop\Task\bolillos\Bolillero\obj\Debug\net9.0\Bolillero.csproj.CoreCompileInputs.cache
-C:\Users\Lab15-PC01\Desktop\Task\bolillos\Bolillero\obj\Debug\net9.0\Bolillero.sourcelink.json

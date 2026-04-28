@@ -1,0 +1,12 @@
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\bin\Debug\net9.0\MiBiblioteca.deps.json
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\bin\Debug\net9.0\MiBiblioteca.dll
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\bin\Debug\net9.0\MiBiblioteca.pdb
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.AssemblyInfoInputs.cache
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.AssemblyInfo.cs
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.sourcelink.json
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.dll
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\refint\MiBiblioteca.dll
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\MiBiblioteca.pdb
+C:\Users\Lab15-PC01\Desktop\Task\MiBiblioteca\obj\Debug\net9.0\ref\MiBiblioteca.dll
