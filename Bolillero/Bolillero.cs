@@ -16,7 +16,7 @@ public class Bolillero
         this.bolillasSacadas = bolillasSacadas;
     }
 
-    public int sacarBolilla()
+    public int SacaryVerBolilla()
     {
         
         if (bolillas == null || bolillas.Count == 0)
