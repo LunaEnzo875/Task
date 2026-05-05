@@ -2,7 +2,7 @@
 
 namespace SimBolillero;
 
-public class Bolillero 
+public class Bolillero
 {
     private static readonly Random rnd = new Random();
     public int cantJugadas { get; set; }
@@ -18,7 +18,7 @@ public class Bolillero
 
     public int SacaryVerBolilla()
     {
-        
+
         if (bolillas == null || bolillas.Count == 0)
             throw new InvalidOperationException("No hay bolillas para sacar.");
 
@@ -27,10 +27,22 @@ public class Bolillero
 
         bolillas.RemoveAt(index);
         bolillasSacadas.Add(valor);
-        
+
         Console.WriteLine($"Sacaste: {valor}");
 
         return valor;
     }
+
+    public Bolillero ClonDeLaListaBolillero()
+    {
+        var CopiaBolillas = new Bolillero(cantJugadas, bolillas, bolillasSacadas)
+        {
+            cantJugadas = cantJugadas,
+            bolillas = bolillas,
+            bolillasSacadas = bolillasSacadas
+        };
+        return CopiaBolillas;
+    }
     
+
 }
