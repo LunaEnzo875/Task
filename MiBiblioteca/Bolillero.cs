@@ -9,7 +9,7 @@ public class Bolillero
     public List<int> bolillas { get; set; }
     public List<int> bolillasSacadas { get; set; }
 
-    public Bolillero(int cantJugadas, List<int> bolillas,List<int> bolillasSacadas)
+    public Bolillero(int cantJugadas, List<int> bolillas, List<int> bolillasSacadas)
     {
         this.cantJugadas = cantJugadas;
         this.bolillas = bolillas;
