@@ -2,7 +2,7 @@
 
 namespace SimBolillero;
 
-public class Bolillero aaaa
+public class Bolillero 
 {
     private static readonly Random rnd = new Random();
     public int cantJugadas { get; set; }
