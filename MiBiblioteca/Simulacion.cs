@@ -19,5 +19,23 @@ public class Simulacion
         return Ganadas;
     }
         
+        public long SimularConHilos(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
+        {
+            var tareas = new List<Task<long>>();
 
+            int baseCantidad = CantidadSimulacion / cantidadHilos;
+            int resto = CantidadSimulacion % cantidadHilos;
+
+            for (int i = 0; i < cantidadHilos; i++)
+            {
+                int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
+
+                tareas.Add(Task.Run(() =>
+                    simularSinHilos(bolillero.ClonDeLaListaBolillero(), jugada, cantidadParaEsteHilo)
+                ));
+            }
+
+            var resultados = Task.WhenAll(tareas).Result;
+            return resultados.Sum();
+        }
 }
