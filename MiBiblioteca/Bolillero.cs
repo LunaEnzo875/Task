@@ -33,6 +33,21 @@ public class Bolillero
         return valor;
     }
 
+        public bool jugada(List<int> jugada)
+    {
+        foreach (var bolillas in jugada)
+        {
+            int sacado = SacaryVerBolilla();
+            bolillasSacadas.Add(sacado);
+
+            if (sacado != bolillas)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public Bolillero ClonDeLaListaBolillero()
     {
         var CopiaBolillas = new Bolillero(cantJugadas, bolillas, bolillasSacadas)
