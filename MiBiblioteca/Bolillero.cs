@@ -9,7 +9,7 @@ public class Bolillero
     public List<int> bolillas { get; set; }
     public List<int> bolillasSacadas { get; set; }
 
-    public Bolillero(int cantJugadas, List<int> bolillas,List<int> bolillasSacadas)
+    public Bolillero(int cantJugadas, List<int> bolillas, List<int> bolillasSacadas)
     {
         this.cantJugadas = cantJugadas;
         this.bolillas = bolillas;
@@ -18,7 +18,7 @@ public class Bolillero
 
     public int SacaryVerBolilla()
     {
-        
+
         if (bolillas == null || bolillas.Count == 0)
             throw new InvalidOperationException("No hay bolillas para sacar.");
 
@@ -27,10 +27,25 @@ public class Bolillero
 
         bolillas.RemoveAt(index);
         bolillasSacadas.Add(valor);
-        
+
         Console.WriteLine($"Sacaste: {valor}");
 
         return valor;
     }
-    
+
+    public bool jugada(List<int> jugada)
+    {
+        foreach (var bolillas in jugada)
+        {
+            int sacado = SacaryVerBolilla();
+            bolillasSacadas.Add(sacado);
+
+            if (sacado != bolillas)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
