@@ -30,7 +30,7 @@ public class Simulacion
         
         public long SimularConHilos(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
         {
-            Task[] tareas = new Task [cantidadHilos];
+            Task<long>[] tareas = new Task<long> [cantidadHilos];
             int baseCantidad = CantidadSimulacion / cantidadHilos;
             int resto = CantidadSimulacion % cantidadHilos;
             
@@ -44,7 +44,7 @@ public class Simulacion
             }
 
             Task.WaitAll(tareas);
-            return  tareas.Sum(t => t.);
+            return  tareas.Sum(t => t.Result);
         }
         
 
