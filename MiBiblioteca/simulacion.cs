@@ -59,8 +59,7 @@ public class Simulacion
             {
                 int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
 
-                var si =
-                Task.Run(() => simularSinHilos(bolillero.ClonDeLaListaBolillero(), jugada, cantidadParaEsteHilo)
+                var si = Task.Run(() => simularSinHilos(bolillero.ClonDeLaListaBolillero(), jugada, cantidadParaEsteHilo)
                 );
             }
 
