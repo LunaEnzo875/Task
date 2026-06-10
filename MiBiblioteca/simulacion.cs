@@ -41,14 +41,6 @@ public class Simulacion
         
 
 
-
-
-
-
-
-
-
-
         public async Task<long> SimularConHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
         {
             Task<long>[] tareas = new Task<long> [cantidadHilos];
