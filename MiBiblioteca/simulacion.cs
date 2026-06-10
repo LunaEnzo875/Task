@@ -1,5 +1,5 @@
 using System;
-using 
+ 
 namespace SimBolillero;
 
 public class Simulacion
@@ -18,14 +18,6 @@ public class Simulacion
 
         return Ganadas;
     }
-        
-
-
-
-
-
-
-
 
         
         public long SimularConHilos(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
@@ -57,7 +49,7 @@ public class Simulacion
 
 
 
-        public async long SimularConHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
+        public async Task<long> SimularConHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
         {
             Task<long>[] tareas = new Task<long> [cantidadHilos];
             int baseCantidad = CantidadSimulacion / cantidadHilos;
@@ -67,9 +59,9 @@ public class Simulacion
             {
                 int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
 
-                tareas.Append(Task.Run(() =>
-                Task.Run(simularSinHilos(bolillero.ClonDeLaListaBolillero(), jugada, cantidadParaEsteHilo)
-                )));
+                var si =
+                Task.Run(() => simularSinHilos(bolillero.ClonDeLaListaBolillero(), jugada, cantidadParaEsteHilo)
+                );
             }
 
             Task.WaitAll(tareas);
