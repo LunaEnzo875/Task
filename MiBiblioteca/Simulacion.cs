@@ -58,4 +58,29 @@ public class Simulacion
             Task.WaitAll(tareas);
             return  tareas.Sum(t => t.Result);
         }
+
+    
+    
+    public async Task<long> SimularParallelAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
+{
+    long[] resultados = new long[cantidadHilos];
+    int baseCantidad = CantidadSimulacion / cantidadHilos;
+    int resto = CantidadSimulacion % cantidadHilos;
+
+    var opciones = new ParallelOptions { MaxDegreeOfParallelism = cantidadHilos };
+
+    await Task.Run(() =>
+        Parallel.For(0, cantidadHilos, opciones, i =>
+        {
+            int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
+
+            Bolillero bolilleroClon = bolillero.ClonDeLaListaBolillero();
+
+            resultados[i] = simularSinHilos(bolilleroClon, jugada, cantidadParaEsteHilo);
+        })
+    );
+
+    // Sumamos todos los resultados guardados en el array (igual al .Average() de tu ejemplo)
+    return resultados.Sum();
+}
 }
