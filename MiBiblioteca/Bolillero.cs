@@ -48,4 +48,9 @@ public class Bolillero
         return true;
     }
 
+    internal Bolillero ClonDeLaListaBolillero()
+    {
+        throw new NotImplementedException();
+    }
+
 }
